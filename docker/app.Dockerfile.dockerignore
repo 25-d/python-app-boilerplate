@@ -42,6 +42,7 @@ htmlcov/
 .nox/
 .coverage
 .coverage.*
+.coveragerc
 .cache
 nosetests.xml
 coverage.xml
@@ -49,6 +50,8 @@ coverage.xml
 *.py,cover
 .hypothesis/
 .pytest_cache/
+.pytest.ini
+pytest.ini
 cover/
 
 # Translations
@@ -145,8 +148,10 @@ venv.bak/
 
 # mkdocs documentation
 /site
+/docs
 
 # mypy
+mypy.ini
 .mypy_cache/
 .dmypy.json
 dmypy.json
@@ -167,24 +172,56 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
-# Ruff stuff:
-.ruff_cache/
-
 # PyPI configuration file
 .pypirc
 
 # Database configuration
 *.db
 
-# IDE and Editor specific files
-.idea/
+# Github
+.github/
+.git/
+.gitignore/
+
+# Docker
+.dockerignore
+Dockerfile
+
+# Astral
+.ruff_cache/
+.ruff.toml
+
+# Project
+# README.md
+tests/
+test/
+
+# IDE and Editor
 .vscode/
+.idea/
 *.sublime-project
+
+# Pre-commit
+.pre-commit-config.yaml
+
+# Monitoring
+logs/
+*.log
+monitoring/
 
 # Profiler
 profiling_reports/
 profiling/reports/
+profiling/
 
 # Benchmark
+benchmark/
 .benchmark/
 .benchmarks/
+
+# Release
+release/
+.releaserc.json
+
+# Scripts
+script/
