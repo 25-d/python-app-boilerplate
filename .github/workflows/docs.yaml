@@ -1,5 +1,5 @@
 # .github/workflows/docs.yml
-name: Deploy Docs
+name: docs
 on: 
   push:
     branches: [ main ]
@@ -28,7 +28,7 @@ jobs:
           uv sync --group docs
       
       - name: Deploy documentation
-        run: mkdocs gh-deploy --force
+        run: uv run mkdocs gh-deploy --force
 
       - name: Minimize uv cache
         run: uv cache prune --ci
