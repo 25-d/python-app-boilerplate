@@ -102,6 +102,8 @@ uv run profiling/profiler.py
 
 ### Documentation
 
+If deploying on Github Pages, go to the repository **Settings** and the **Pages** section to select the **gh-pages** branch as the source of the page.
+
 1. Clone the repository in the pwd of your project.
 ```bash
 git clone git@github.com:25-d/python-app-boilerplate .
