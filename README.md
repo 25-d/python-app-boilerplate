@@ -145,7 +145,7 @@ uv run mypy .
 uv run pytest --cov
 ```
 
-### Deployment
+## Deployment
 
 - Scripts may not need a deployment or packaging
 - CLIs, GUIs/non-GUI services could be deployed from a docker image or built, packaged and published to PyPI or Github Release
@@ -155,7 +155,7 @@ uv run pytest --cov
 app-gui = "python_app_boilerplate_25_d.main:main_gui"
 ```
 
-## Automatic release
+### Automatic release
 
 1. Clone the repository
 ```bash
@@ -170,13 +170,13 @@ git clone git@github.com:25-d/python-app-boilerplate .
 
 | release type          | prerelease    | release   |
 | --------              | -------       |-------    |
-| Release type          | */*           | main      |
+| Release type          | \*/\*         | main      |
 | Versioning            | v1.0.0-rc.1   | v1.0.0    |
 | Git Tag               | v1.0.0-rc.1   | v1.0.0    |
 | Git Releases          | pre-release   | release   |
 | Index Publishing      | testPyPi      | pyPi      |
 
-## Manual TestPyPi/PyPi
+### Manual TestPyPi/PyPi
 
 1. Clone the repository
 ```bash
@@ -191,7 +191,7 @@ uv build
 uv publish
 ```
 
-## Docker
+### Docker
 
 1. Clone the repository
 ```bash
@@ -206,7 +206,7 @@ docker build . --file docker/app.Dockerfile --tag python-app
 docker run python-app
 ```
 
-## Docker Compose
+### Docker Compose
 
 1. Clone the repository
 ```bash
